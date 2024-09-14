@@ -1,17 +1,6 @@
 #include <stdio.h>
 #include "lifegame.h"
 
-static void copy_field(const p_game_field_t const from, p_game_field_t const to) {
-    const size_t sx = from->SIZEX, sy = from->SIZEY;
-    to->SIZEX = sx;
-    to->SIZEY = sy;
-    for (size_t y = 0; y < sy; y++) {
-        for (size_t x = 0; x < sx; x++) {
-            to->value[y][x] = from->value[y][x];
-        }
-    }
-}
-
 p_game_field_t create_field(const size_t x, const size_t y) {
     p_game_field_t field = (p_game_field_t)malloc(sizeof(game_field_t));
     field->SIZEX = x;
