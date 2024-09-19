@@ -13,7 +13,7 @@ int main(void) {
         system("cls");
 
         printf("Life Game");
-        print(field, 0, 2);
+        draw(field, 0, 2);
         printf("\n");
         printf("Alive cells: %i\n", count_alive_cells(field));
         printf("Press zero to exit...");

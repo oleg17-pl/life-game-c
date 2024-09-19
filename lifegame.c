@@ -79,7 +79,7 @@ void step(pp_game_field_t pfield) {
     *pfield = new_field;
 }
 
-void print(const p_game_field_t const field, coord_t xpos, coord_t ypos) {
+void draw(const p_game_field_t const field, coord_t xpos, coord_t ypos) {
     for (size_t i = 0; i < ypos; ++i) {
         printf("\n");
     }

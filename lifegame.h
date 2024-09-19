@@ -21,6 +21,6 @@ bool_t is_alive_cell(const p_game_field_t const field, const coord_t x, const co
 void clear(p_game_field_t field);
 int count_alive_cells(const p_game_field_t const field);
 void step(pp_game_field_t field);
-void print(const p_game_field_t const field, coord_t xpos, coord_t ypos);
+void draw(const p_game_field_t const field, coord_t xpos, coord_t ypos);
 
 #endif // !LIFEGAME_H
