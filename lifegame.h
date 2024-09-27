@@ -3,8 +3,8 @@
 
 #include <stdlib.h>
 
-typedef char cell_t;
 typedef char bool_t;
+typedef bool_t cell_t;
 typedef size_t coord_t;
 
 typedef struct game_field {
